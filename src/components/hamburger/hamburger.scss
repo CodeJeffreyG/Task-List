@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #2C3333;
+    color: #cbe4de;;
+
+    
+}
+
+main > ul > li {
+    list-style-type: none;
+    margin: 3rem;
+    cursor: pointer;
+}

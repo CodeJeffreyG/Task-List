@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  width: 100%;
+  min-height: 80px;
+  background-color: #2c3333;
+  color: #cbe4de;
+
+    .hamburger{
+        cursor: pointer;
+    }
+
+}
+
+nav > * {
+    margin: 1rem;
+}
