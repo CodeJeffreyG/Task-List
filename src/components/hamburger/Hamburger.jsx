@@ -6,23 +6,23 @@ const Hamburger = (props) => {
   return (
     <main>
       <ul>
-        <li className="link">
-          <Link onClick={props.handleClick} to="/">
+        <li>
+          <Link className="link" onClick={props.handleClick} to="/">
             All Tasks
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} to="/projects">
+          <Link className="link" onClick={props.handleClick} to="/projects">
             Projects
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} to="/issues">
+          <Link className="link" onClick={props.handleClick} to="/issues">
             Issues
           </Link>
         </li>
         <li>
-          <Link onClick={props.handleClick} to="/meetings">
+          <Link className="link" onClick={props.handleClick} to="/meetings">
             Meetings
           </Link>
         </li>
