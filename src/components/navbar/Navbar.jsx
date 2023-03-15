@@ -30,7 +30,7 @@ const Navbar = () => {
           <div></div>
           <CloseIcon onClick={handleClick} className="X" />
         </nav>
-        <Hamburger />;
+        <Hamburger handleClick={handleClick} />;
       </>
     );
   }

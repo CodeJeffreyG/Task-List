@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Hamburger from "./components/hamburger/Hamburger";
 import Alltasks from "./components/alltasks/Alltasks";
 import Issues from "./components/issues/Issues";
 import Meetings from "./components/meetings/Meetings";

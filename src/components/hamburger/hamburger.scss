@@ -7,10 +7,14 @@ main {
   height: calc(100vh - 80px);
   background-color: #2c3333;
   color: #cbe4de;
+  
 }
 
 main > ul > li {
+    text-decoration: none;
   list-style-type: none;
   margin: 3rem;
   cursor: pointer;
+  
 }
+
