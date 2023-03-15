@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -7,14 +7,23 @@ import Hamburger from "../hamburger/Hamburger";
 
 const Navbar = () => {
   let [hamburger, setHamburger] = useState(true);
+  let [resize, setResize] = useState(null);
+
+  useEffect(() => {}, [resize]);
+
+  const handleResize = () => {
+    setResize(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleResize);
 
   const handleClick = () => {
-    console.log("it Worked!");
     setHamburger((prevHamburger) => !prevHamburger);
+    if (resize > 750) setHamburger(false);
   };
 
   //mobile hamburger menu
-  if (hamburger) {
+  if (hamburger && resize < 750) {
     return (
       <nav>
         <div>Task-List</div>
@@ -22,8 +31,9 @@ const Navbar = () => {
       </nav>
     );
   }
+
   //mobile hamburger menue
-  if (!hamburger) {
+  if (!hamburger && resize < 750) {
     return (
       <>
         <nav>
@@ -34,6 +44,8 @@ const Navbar = () => {
       </>
     );
   }
+
+  //tablet size
 };
 
 export default Navbar;

@@ -6,6 +6,8 @@ import Meetings from "./components/meetings/Meetings";
 import Projects from "./components/projects/Projects";
 
 function App() {
+  
+
   return (
     <>
       <Navbar />
