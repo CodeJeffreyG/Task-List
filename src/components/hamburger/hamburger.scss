@@ -22,3 +22,16 @@ main > ul > li  {
     color: inherit;
     text-decoration: inherit;
 }
+
+.tablet{
+  display: flex;
+  justify-content: flex-end;
+  flex: 3;
+}
+
+.tablet > li{
+  display: flex;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+

@@ -3,6 +3,19 @@ import { Outlet, Link } from "react-router-dom";
 import "./hamburger.scss";
 
 const Hamburger = (props) => {
+  //tablet size
+  if (props.resize > 750) {
+    return (
+      <ul className="tablet">
+        <li>All Tasks</li>
+        <li>Projects</li>
+        <li>Issues</li>
+        <li>Meetings</li>
+      </ul>
+    );
+  }
+
+  //mobile size
   return (
     <main>
       <ul>

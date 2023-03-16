@@ -9,11 +9,13 @@ const Navbar = () => {
   let [hamburger, setHamburger] = useState(true);
   let [resize, setResize] = useState(null);
 
-  useEffect(() => {}, [resize]);
-
   const handleResize = () => {
     setResize(window.innerWidth);
   };
+
+  useEffect(() => {
+    handleResize();
+  }, []);
 
   window.addEventListener("resize", handleResize);
 
@@ -44,8 +46,16 @@ const Navbar = () => {
       </>
     );
   }
-
   //tablet size
+
+  if (resize > 749) {
+    return (
+      <nav className="not-mobile">
+        <div>Task-List</div>
+        <Hamburger className="not-mobile-routes" resize={resize} />
+      </nav>
+    );
+  }
 };
 
 export default Navbar;

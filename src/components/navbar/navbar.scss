@@ -22,3 +22,12 @@ nav {
 nav > * {
     margin: 1rem;
 }
+
+.not-mobile {
+  display: flex;
+}
+
+.not-mobile > div {
+    flex: 1;
+}
+
