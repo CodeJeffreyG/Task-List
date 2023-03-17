@@ -6,10 +6,8 @@ import Meetings from "./components/meetings/Meetings";
 import Projects from "./components/projects/Projects";
 
 function App() {
-  
-
   return (
-    <>
+    <div className="body-background">
       <Navbar />
 
       <Routes>
@@ -18,9 +16,8 @@ function App() {
         <Route path="/issues" element={<Issues />} />
         <Route path="/meetings" element={<Meetings />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
 export default App;
-
